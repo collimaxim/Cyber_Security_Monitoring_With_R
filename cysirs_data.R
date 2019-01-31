@@ -1,28 +1,34 @@
 
 #  cysirs  is the Cyber Security Incident Response System
+# The objective is to provide detailed visibility on system security event monitoring and tracking
+# to facilitate Threat Hinderance and Information Governance (THIG)
 #  This project will develop a wide varity of skills complimentary to data science engineering toolkit
 #
 #  Pull in computer statistics data into R,  store the data into a database, 
 #  display the data in a web app 
 #  and deliver reporting analytics dashboard with actionable intfomation 
-# 
-#   Step 1 - Gather the data ( what are the objectives and purpose of the application )
-#   Step 2 - create repository to store data and retrieve historical data
-#   Step 3 - build web frontend to deliver the data to users
+ 
 # Note: Must run as Rstudio as administrator for security log reading
 
+# Prerequisites 
+# R and RStudio installed with packages listed below
 
 # ****  Step 1  ****
+
+# Gathering event data 
+# Do some necessary transformations and munging of the data
+# Push to log files ( can be saved on local drives or pushed to S3)
+# These files can then be loaded into database and or collected with CloudWatch Log Agent
 
 #  Computer info
 #  Netstat info
 #  Active processes info
 #  Installed Apps info
 #  Event Log key alerts
-#  Common Vulnerability Exploit cross validation with installed apps and processes
+#  You can implement a Common Vulnerability Exploit cross validation with installed apps and processes
 #   ( this brings up a comparision matching algorithm based on percentage of a matching set of strings, if there is 
 #  an 85 % match on a given  CVE and a process running locally then flag it for investigation...
-#   Research that matching algorith  )
+#   You will need to research that matching algorith  )
 
 
 # load the library packages
@@ -37,13 +43,29 @@ library(stringi)
 library(tidyr)
 # install.packages("devtools")
 library(devtools)
+# Data Visualization
+library(ggplot2)
+
+
+
+#Get and Set the working directory
+
+ 
+
+
+# Check to see if that directory exists, if not, then create it. 
+
+if (!file.exists("C:/mydata/cysirs/Cyber_Security_Monitoring_With_R")) {
+  dir.create("C:/mydata/cysirs/Cyber_Security_Monitoring_With_R")
+  
+}
 
 
 
 # Set the working Directory
 setwd("C:/mydata/cysirs/Cyber_Security_Monitoring_With_R")
 
-# run a shell command / vb script 
+# run a shell command / vb script   / ignore the "Invalid procedure call" runtime error...
 shell("cscript cyberup_Computer_Installed_Apps.vbs")
 
 # read in tab delimited txt doc...
@@ -101,7 +123,7 @@ system('powershell -command $a = netstat -a ; $a[3..$a.count] | ConvertFrom-Stri
 # netstat - s  TCP IP statistics   0  will need additional data tidying for this data
 system('powershell -command $s = netstat -s ; $s > tcp_ip.txt' )
 
-??read 
+# ??read 
 
 # due to error In read.table(file = file, header = header, sep = sep, quote = quote,  :
 # line 5 appears to contain embedded nulls I added the fileEncoding="UCS-2LE" and it worked fine
@@ -222,50 +244,23 @@ try(write.table(nstat_s, file = csvfile_nstat_s , append = FALSE,
 
 
 
-# Work on cleaning up below
+# Working on adding this section below  for netstat data
 
- system('powershell -command $a = netstat -a ; $a[3..$a.count] | ConvertFrom-String | select p2,p3,p4,p5 | Export-CSv > c:/mydata/cysirs/acc1.csv '  )
+ system('powershell -command $a = netstat -a ; $a[3..$a.count] | ConvertFrom-String | select p2,p3,p4,p5 | Export-CSV -Path c:/mydata/cysirs/Cyber_Security_Monitoring_With_R/active_conn.csv '  )
 
 
- 
- 
-#remove first 4 lines
-ac <-  ac[5:length(ac)]
-#
+active_conn <- read.csv("active_conn.csv", header = FALSE,  skip=3, sep=",")
 
-a2 <- read.csv("ac2.txt", header = FALSE, sep="\t")
-#  strip.white = TRUE
+View(active_conn) 
+# column names are - "Proto","Local","Address","Foreign" 
  
 
-
-
  
-
-system('powershell -command  Get-NetworkStatistics -computername THIG | Export-CSv active_connections.csv')
- 
-# Active connections
-system('powershell -command  netstat -a | Export-CSv active_connections.csv')
-
-shell("NETSTAT -a > active_cons.csv")
-
-active_conn <- read.csv("active_cons.txt", header = FALSE, sep="\t", skip = 4, strip.white = TRUE )
-
-ac <- read.delim("ac2.txt", header = FALSE, strip.white = TRUE, skip = 4)
-#, fileEncoding="UCS-2LE"
-# ?read.table
-View(ac)
-
-??pattern
-
-View(active_conn)
-
- 
-?readLines
 
 
 #####    Processes running 
 # Run powershell command to get running processes
-system('powershell -command $p = Get-Process ; $p[2..$p.count]  | Export-CSV procs.csv', intern=TRUE)
+system('powershell -command $p = Get-Process ; $p[2..$p.count]  | Export-CSV -Path procs.csv', intern=TRUE)
 # This command will store the output in a variable 
 #procs <- system('powershell -command Get-Process ', intern=TRUE)
 
@@ -291,6 +286,7 @@ act_process$CPU <- round((act_process$CPU), 2)
 # Add memory usage column with mb 
 act_process$MemoryUsage <-  round((act_process$PrivateMemorySize/1048576),2) 
 
+library(ggvis)
 act_process %>% 
   ggvis(x = ~CPU, y = ~MemoryUsage)
 
@@ -307,19 +303,6 @@ act_process %>% filter(CPU < 2000)  %>%
   layer_smooths(stroke  = "smooth") %>%
   layer_model_predictions(model = "lm", stroke = "lm")
 
-act_process %>% 
-  ggvis(StartTime)
-
-
-# not working section
-animate(act_process, grand_tour(d = 2), display = display_xy() )
-
-lb <- linked_brush(keys = act_process$Name, fill = "red")
-
-act_process %>%  ggvis(~CPU, ~MemoryUsage, key := ~Name) %>%
-  layer_points( fill := lb$fill, fill.brush := "red") %>%
-  (lb$input)
- 
 
 View(act_process)
 

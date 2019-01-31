@@ -2,100 +2,144 @@
 Active Connections
 
   Proto  Local Address          Foreign Address        State
+  TCP    0.0.0.0:80             thig1:0                LISTENING
   TCP    0.0.0.0:135            thig1:0                LISTENING
   TCP    0.0.0.0:445            thig1:0                LISTENING
-  TCP    0.0.0.0:1521           thig1:0                LISTENING
-  TCP    0.0.0.0:5357           thig1:0                LISTENING
-  TCP    0.0.0.0:7069           thig1:0                LISTENING
-  TCP    0.0.0.0:8080           thig1:0                LISTENING
+  TCP    0.0.0.0:5040           thig1:0                LISTENING
+  TCP    0.0.0.0:5500           thig1:0                LISTENING
+  TCP    0.0.0.0:8082           thig1:0                LISTENING
+  TCP    0.0.0.0:17500          thig1:0                LISTENING
   TCP    0.0.0.0:49664          thig1:0                LISTENING
   TCP    0.0.0.0:49665          thig1:0                LISTENING
   TCP    0.0.0.0:49666          thig1:0                LISTENING
   TCP    0.0.0.0:49667          thig1:0                LISTENING
   TCP    0.0.0.0:49668          thig1:0                LISTENING
-  TCP    0.0.0.0:49684          thig1:0                LISTENING
-  TCP    0.0.0.0:49719          thig1:0                LISTENING
-  TCP    10.0.0.41:139          thig1:0                LISTENING
-  TCP    10.0.0.41:50259        bn3sch020010643:https  ESTABLISHED
-  TCP    10.0.0.41:50334        msnbot-65-52-108-221:https  ESTABLISHED
-  TCP    10.0.0.41:51460        ec2-54-165-24-88:https  ESTABLISHED
-  TCP    10.0.0.41:51462        ec2-52-207-181-90:https  ESTABLISHED
-  TCP    10.0.0.41:51463        ec2-54-165-24-88:https  ESTABLISHED
-  TCP    10.0.0.41:51598        s130m:http             TIME_WAIT
-  TCP    10.0.0.41:51604        65.55.44.109:https     ESTABLISHED
-  TCP    10.0.0.41:60417        ec2-52-206-32-179:https  ESTABLISHED
-  TCP    10.0.0.41:61555        thig1:0                LISTENING
-  TCP    10.0.0.41:62619        91.190.218.21:https    CLOSE_WAIT
-  TCP    127.0.0.1:31946        thig1:0                LISTENING
-  TCP    127.0.0.1:49688        thig1:0                LISTENING
-  TCP    127.0.0.1:50299        thig1:0                LISTENING
+  TCP    0.0.0.0:49669          thig1:0                LISTENING
+  TCP    0.0.0.0:49675          thig1:0                LISTENING
+  TCP    0.0.0.0:65451          thig1:0                LISTENING
+  TCP    10.0.0.76:139          thig1:0                LISTENING
+  TCP    10.0.0.76:2032         thig1:0                LISTENING
+  TCP    10.0.0.76:51007        40.122.34.18:https     CLOSE_WAIT
+  TCP    10.0.0.76:53018        lb-192-30-253-124-iad:https  ESTABLISHED
+  TCP    10.0.0.76:53184        162.125.18.133:https   ESTABLISHED
+  TCP    10.0.0.76:53195        72.21.91.29:http       CLOSE_WAIT
+  TCP    10.0.0.76:53196        185.199.111.154:https  CLOSE_WAIT
+  TCP    10.0.0.76:53254        52.114.132.22:https    ESTABLISHED
+  TCP    10.0.0.76:53645        lb-192-30-253-125-iad:https  ESTABLISHED
+  TCP    10.0.0.76:53786        65.52.108.76:https     ESTABLISHED
+  TCP    10.0.0.76:53796        40.122.33.234:https    ESTABLISHED
+  TCP    10.0.0.76:54472        ec2-34-228-137-164:https  CLOSE_WAIT
+  TCP    10.0.0.76:54619        162.125.18.133:https   ESTABLISHED
+  TCP    10.0.0.76:54713        162.125.34.137:https   CLOSE_WAIT
+  TCP    10.0.0.76:54744        40.122.27.40:https     CLOSE_WAIT
+  TCP    10.0.0.76:54785        md-in-44:https         CLOSE_WAIT
+  TCP    10.0.0.76:54788        104.25.27.33:https     CLOSE_WAIT
+  TCP    10.0.0.76:54865        iad23s63-in-f14:https  TIME_WAIT
+  TCP    10.0.0.76:54866        iad23s63-in-f14:https  TIME_WAIT
+  TCP    10.0.0.76:54876        iad23s41-in-f67:https  TIME_WAIT
+  TCP    10.0.0.76:54877        iad23s41-in-f67:https  TIME_WAIT
+  TCP    10.0.0.76:54881        ec2-34-197-169-67:http  CLOSE_WAIT
+  TCP    10.0.0.76:54892        iad23s63-in-f14:https  ESTABLISHED
+  TCP    10.0.0.76:54893        iad23s63-in-f14:https  ESTABLISHED
+  TCP    10.0.0.76:54895        13.107.4.52:http       TIME_WAIT
+  TCP    10.0.0.76:54896        ec2-34-197-169-67:http  ESTABLISHED
+  TCP    10.0.0.76:54897        ec2-34-197-169-67:http  ESTABLISHED
+  TCP    10.0.0.76:55612        52.173.24.17:https     ESTABLISHED
+  TCP    10.0.0.76:59221        40.122.32.58:https     CLOSE_WAIT
+  TCP    10.0.0.76:60053        adobe:https            CLOSE_WAIT
+  TCP    127.0.0.1:843          thig1:0                LISTENING
+  TCP    127.0.0.1:1521         thig1:0                LISTENING
+  TCP    127.0.0.1:1521         thig1:65450            ESTABLISHED
+  TCP    127.0.0.1:17600        thig1:0                LISTENING
+  TCP    127.0.0.1:23132        thig1:0                LISTENING
+  TCP    127.0.0.1:50911        thig1:0                LISTENING
+  TCP    127.0.0.1:61847        thig1:0                LISTENING
+  TCP    127.0.0.1:61962        thig1:61963            ESTABLISHED
+  TCP    127.0.0.1:61963        thig1:61962            ESTABLISHED
+  TCP    127.0.0.1:61968        thig1:61969            ESTABLISHED
+  TCP    127.0.0.1:61969        thig1:61968            ESTABLISHED
+  TCP    127.0.0.1:61975        thig1:61976            ESTABLISHED
+  TCP    127.0.0.1:61976        thig1:61975            ESTABLISHED
+  TCP    127.0.0.1:64970        thig1:0                LISTENING
+  TCP    127.0.0.1:65450        thig1:1521             ESTABLISHED
+  TCP    [::]:80                thig1:0                LISTENING
   TCP    [::]:135               thig1:0                LISTENING
   TCP    [::]:445               thig1:0                LISTENING
-  TCP    [::]:1521              thig1:0                LISTENING
-  TCP    [::]:5357              thig1:0                LISTENING
-  TCP    [::]:8080              thig1:0                LISTENING
+  TCP    [::]:5500              thig1:0                LISTENING
+  TCP    [::]:8082              thig1:0                LISTENING
+  TCP    [::]:17500             thig1:0                LISTENING
   TCP    [::]:49664             thig1:0                LISTENING
   TCP    [::]:49665             thig1:0                LISTENING
   TCP    [::]:49666             thig1:0                LISTENING
   TCP    [::]:49667             thig1:0                LISTENING
   TCP    [::]:49668             thig1:0                LISTENING
-  TCP    [::]:49684             thig1:0                LISTENING
-  TCP    [::]:49719             thig1:0                LISTENING
-  TCP    [::1]:49725            thig1:0                LISTENING
-  TCP    [2601:98b:8200:51c1:a53d:3e2:b9df:afda]:62832  [2406:da00:ff00::36ad:bb45]:https  CLOSE_WAIT
-  TCP    [2601:98b:8200:51c1:a53d:3e2:b9df:afda]:62834  [2600:1408:24:19f::201a]:http  CLOSE_WAIT
-  TCP    [2601:98b:8200:51c1:a53d:3e2:b9df:afda]:62835  [2600:1408:24:182::201a]:http  CLOSE_WAIT
-  TCP    [2601:98b:8200:51c1:a53d:3e2:b9df:afda]:62837  [2406:da00:ff00::3655:55f6]:https  CLOSE_WAIT
-  TCP    [2601:98b:8200:51c1:a53d:3e2:b9df:afda]:62838  [2406:da00:ff00::3655:55f6]:https  CLOSE_WAIT
-  TCP    [2601:98b:8200:51c1:a53d:3e2:b9df:afda]:62839  [2406:da00:ff00::3655:55f6]:https  CLOSE_WAIT
-  TCP    [2601:98b:8200:51c1:a53d:3e2:b9df:afda]:62840  [2406:da00:ff00::3655:55f6]:https  CLOSE_WAIT
-  TCP    [2601:98b:8200:51c1:a53d:3e2:b9df:afda]:62841  [2600:1408:24:19a::bfb]:https  CLOSE_WAIT
-  TCP    [2601:98b:8200:51c1:a53d:3e2:b9df:afda]:62842  [2406:da00:ff00::3655:55f6]:https  CLOSE_WAIT
-  TCP    [2601:98b:8200:51c1:a53d:3e2:b9df:afda]:62843  [2600:1408:24:19a::bfb]:https  CLOSE_WAIT
-  TCP    [fe80::a53d:3e2:b9df:afda%4]:1521  thig1:49717            ESTABLISHED
-  TCP    [fe80::a53d:3e2:b9df:afda%4]:49717  thig1:1521             ESTABLISHED
-  UDP    0.0.0.0:3544           *:*                    
-  UDP    0.0.0.0:3702           *:*                    
-  UDP    0.0.0.0:3702           *:*                    
-  UDP    0.0.0.0:3702           *:*                    
-  UDP    0.0.0.0:3702           *:*                    
-  UDP    0.0.0.0:3702           *:*                    
-  UDP    0.0.0.0:3702           *:*                    
-  UDP    0.0.0.0:5353           *:*                    
-  UDP    0.0.0.0:5353           *:*                    
-  UDP    0.0.0.0:5353           *:*                    
+  TCP    [::]:49669             thig1:0                LISTENING
+  TCP    [::]:49675             thig1:0                LISTENING
+  TCP    [::]:65451             thig1:0                LISTENING
+  TCP    [::1]:49706            thig1:0                LISTENING
+  TCP    [2601:98b:8200:5064::137d]:2032  thig1:0                LISTENING
+  TCP    [2601:98b:8200:5064:579:d421:da13:2fad]:2032  thig1:0                LISTENING
+  TCP    [2601:98b:8200:5064:a53d:3e2:b9df:afda]:2032  thig1:0                LISTENING
+  TCP    [2601:98b:8200:5064:b914:a8fd:151a:c621]:53191  iad30s07-in-x03:https  CLOSE_WAIT
+  TCP    [2601:98b:8200:5064:b914:a8fd:151a:c621]:53192  xx-fbcdn6-shv-01-iad3:https  CLOSE_WAIT
+  TCP    [2601:98b:8200:5064:b914:a8fd:151a:c621]:53193  [2001:559:19:309b::753]:https  CLOSE_WAIT
+  TCP    [2601:98b:8200:5064:b914:a8fd:151a:c621]:53194  iad23s42-in-x2003:http  CLOSE_WAIT
+  TCP    [2601:98b:8200:5064:b914:a8fd:151a:c621]:54421  [2620:100:601c:7::a27d:607]:https  CLOSE_WAIT
+  TCP    [2601:98b:8200:5064:b914:a8fd:151a:c621]:54501  [2607:f8b0:400d:c0f::bd]:https  ESTABLISHED
+  TCP    [2601:98b:8200:5064:b914:a8fd:151a:c621]:54774  [2620:100:601c:3::a27d:603]:https  CLOSE_WAIT
+  TCP    [2601:98b:8200:5064:b914:a8fd:151a:c621]:54869  iad23s59-in-x0e:https  TIME_WAIT
+  TCP    [2601:98b:8200:5064:b914:a8fd:151a:c621]:54870  iad23s59-in-x0e:https  TIME_WAIT
+  TCP    [2601:98b:8200:5064:b914:a8fd:151a:c621]:54871  iad30s09-in-x02:https  TIME_WAIT
+  TCP    [2601:98b:8200:5064:b914:a8fd:151a:c621]:54872  iad30s09-in-x02:https  TIME_WAIT
+  TCP    [2601:98b:8200:5064:b914:a8fd:151a:c621]:54901  [2620:100:601c:3::a27d:603]:https  TIME_WAIT
+  TCP    [2601:98b:8200:5064:b914:a8fd:151a:c621]:54904  [2620:100:601c:3::a27d:603]:https  TIME_WAIT
+  TCP    [2601:98b:8200:5064:b914:a8fd:151a:c621]:54910  [2620:1ec:c::11]:https  TIME_WAIT
+  TCP    [2601:98b:8200:5064:b914:a8fd:151a:c621]:54911  [2620:1ec:c::11]:https  TIME_WAIT
+  TCP    [2601:98b:8200:5064:b914:a8fd:151a:c621]:54912  iad30s07-in-x03:https  TIME_WAIT
+  TCP    [2601:98b:8200:5064:b914:a8fd:151a:c621]:54913  iad30s07-in-x03:https  TIME_WAIT
+  TCP    [2601:98b:8200:5064:b914:a8fd:151a:c621]:54914  [2607:f8b0:400d:c0f::bd]:https  TIME_WAIT
+  TCP    [2601:98b:8200:5064:b914:a8fd:151a:c621]:54915  [2620:100:601c:3::a27d:603]:https  TIME_WAIT
+  TCP    [2601:98b:8200:5064:b914:a8fd:151a:c621]:54922  [2a01:111:2010:8::ff19]:https  ESTABLISHED
+  TCP    [2601:98b:8200:5064:b914:a8fd:151a:c621]:54923  iad30s07-in-x03:https  TIME_WAIT
+  TCP    [2601:98b:8200:5064:b914:a8fd:151a:c621]:54924  iad30s07-in-x03:https  TIME_WAIT
+  TCP    [2601:98b:8200:5064:b914:a8fd:151a:c621]:54925  [2a01:111:2010:8::ff19]:https  TIME_WAIT
+  TCP    [2601:98b:8200:5064:b914:a8fd:151a:c621]:54927  [2603:1036:404:11a::2]:https  TIME_WAIT
+  TCP    [2601:98b:8200:5064:b914:a8fd:151a:c621]:54928  [2603:1036:404:11a::2]:https  ESTABLISHED
+  TCP    [2601:98b:8200:5064:b914:a8fd:151a:c621]:54932  [2620:1ec:c::11]:https  ESTABLISHED
+  TCP    [2601:98b:8200:5064:b914:a8fd:151a:c621]:54933  [2620:1ec:c::11]:https  TIME_WAIT
+  TCP    [2601:98b:8200:5064:b914:a8fd:151a:c621]:54934  [2a01:111:2010:8::ff19]:https  ESTABLISHED
+  TCP    [2601:98b:8200:5064:b914:a8fd:151a:c621]:54936  iad23s63-in-x05:https  ESTABLISHED
+  TCP    [2601:98b:8200:5064:b914:a8fd:151a:c621]:54937  iad23s63-in-x05:https  ESTABLISHED
+  TCP    [2601:98b:8200:5064:b914:a8fd:151a:c621]:54938  [2620:1ec:c::11]:https  ESTABLISHED
+  TCP    [2601:98b:8200:5064:b914:a8fd:151a:c621]:54945  iad30s07-in-x03:https  ESTABLISHED
+  TCP    [2601:98b:8200:5064:b914:a8fd:151a:c621]:54946  iad30s07-in-x03:https  ESTABLISHED
+  TCP    [2601:98b:8200:5064:b914:a8fd:151a:c621]:54953  [2001:559:19:a000::172b:a513]:https  ESTABLISHED
+  TCP    [2601:98b:8200:5064:b914:a8fd:151a:c621]:54963  [2620:119:50e0:105::6cae:b11]:https  ESTABLISHED
+  TCP    [2601:98b:8200:5064:b914:a8fd:151a:c621]:54974  [2620:100:601c:3::a27d:603]:https  TIME_WAIT
+  TCP    [2601:98b:8200:5064:b914:a8fd:151a:c621]:54975  [2620:100:6040:4::a27d:f804]:https  TIME_WAIT
+  TCP    [2601:98b:8200:5064:b914:a8fd:151a:c621]:54998  [2620:100:601c:3::a27d:603]:https  TIME_WAIT
+  TCP    [2601:98b:8200:5064:b914:a8fd:151a:c621]:55004  [2620:100:601c:3::a27d:603]:https  TIME_WAIT
+  TCP    [2601:98b:8200:5064:b914:a8fd:151a:c621]:55668  [2001:559:19:3097::57]:https  CLOSE_WAIT
+  TCP    [2601:98b:8200:5064:b914:a8fd:151a:c621]:65036  [2620:119:50e0:105::6cae:b11]:https  ESTABLISHED
+  TCP    [fe80::a53d:3e2:b9df:afda%7]:2032  thig1:0                LISTENING
+  UDP    0.0.0.0:5050           *:*                    
   UDP    0.0.0.0:5353           *:*                    
   UDP    0.0.0.0:5355           *:*                    
-  UDP    0.0.0.0:7071           *:*                    
-  UDP    0.0.0.0:55216          *:*                    
-  UDP    0.0.0.0:56357          *:*                    
-  UDP    0.0.0.0:57927          *:*                    
-  UDP    0.0.0.0:58465          *:*                    
-  UDP    0.0.0.0:58805          *:*                    
-  UDP    10.0.0.41:137          *:*                    
-  UDP    10.0.0.41:138          *:*                    
-  UDP    10.0.0.41:1900         *:*                    
-  UDP    10.0.0.41:56353        *:*                    
-  UDP    10.0.0.41:61555        *:*                    
-  UDP    10.0.0.41:63924        *:*                    
+  UDP    0.0.0.0:17500          *:*                    
+  UDP    0.0.0.0:57946          *:*                    
+  UDP    0.0.0.0:63691          *:*                    
+  UDP    10.0.0.76:137          *:*                    
+  UDP    10.0.0.76:138          *:*                    
+  UDP    10.0.0.76:1900         *:*                    
+  UDP    10.0.0.76:59984        *:*                    
   UDP    127.0.0.1:1233         *:*                    
   UDP    127.0.0.1:1900         *:*                    
-  UDP    127.0.0.1:56354        *:*                    
-  UDP    [::]:3702              *:*                    
-  UDP    [::]:3702              *:*                    
-  UDP    [::]:3702              *:*                    
-  UDP    [::]:3702              *:*                    
-  UDP    [::]:3702              *:*                    
-  UDP    [::]:3702              *:*                    
-  UDP    [::]:5353              *:*                    
-  UDP    [::]:5353              *:*                    
+  UDP    127.0.0.1:49666        *:*                    
+  UDP    127.0.0.1:59985        *:*                    
   UDP    [::]:5353              *:*                    
   UDP    [::]:5355              *:*                    
-  UDP    [::]:55217             *:*                    
-  UDP    [::]:56358             *:*                    
-  UDP    [::]:57928             *:*                    
-  UDP    [::]:58806             *:*                    
+  UDP    [::]:63691             *:*                    
   UDP    [::1]:1900             *:*                    
-  UDP    [::1]:56352            *:*                    
-  UDP    [fe80::a53d:3e2:b9df:afda%4]:1900  *:*                    
-  UDP    [fe80::a53d:3e2:b9df:afda%4]:56351  *:*                    
+  UDP    [::1]:59983            *:*                    
+  UDP    [fe80::a53d:3e2:b9df:afda%7]:1900  *:*                    
+  UDP    [fe80::a53d:3e2:b9df:afda%7]:59982  *:*                    

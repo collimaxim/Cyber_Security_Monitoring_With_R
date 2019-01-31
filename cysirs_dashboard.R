@@ -10,7 +10,7 @@ library(shinydashboard)
 
 # Header
 
-header <-  dashboardHeader( title = "CySirs SO Center",
+header <-  dashboardHeader( title = "CySirs SOC - Shiny Dashboard Demo",
   dropdownMenu(type = "messages",
                messageItem(
                  from = "Security Ops",
@@ -83,7 +83,7 @@ body <-  dashboardBody(
     
     ###
   tabItem(tabName = "dashboard",
-           h2("Dashboard content section")
+           h2("Customizable Dashboard content section")
            ,
   
   fluidRow(
