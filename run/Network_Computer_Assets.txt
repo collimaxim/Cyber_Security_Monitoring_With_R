@@ -1,0 +1,3 @@
+Domain_Name	Computer_Name	User_Name	DNS_Host_Name	Computer_Role	Manufacturer	Model	Admin_Password_Status	Computer_System_Type
+
+WORKGROUP	THIG1	thig1\Destiny	thig1	Standalone Workstation	TOSHIBA	Satellite S55-B	Not Implemented	Mobile (laptop or tablet)

@@ -1,0 +1,176 @@
+
+IPv4 Statistics
+
+  Packets Received                   = 943191
+  Received Header Errors             = 0
+  Received Address Errors            = 0
+  Datagrams Forwarded                = 0
+  Unknown Protocols Received         = 0
+  Received Packets Discarded         = 539678
+  Received Packets Delivered         = 423485
+  Output Requests                    = 260042
+  Routing Discards                   = 0
+  Discarded Output Packets           = 442
+  Output Packet No Route             = 17
+  Reassembly Required                = 0
+  Reassembly Successful              = 0
+  Reassembly Failures                = 0
+  Datagrams Successfully Fragmented  = 0
+  Datagrams Failing Fragmentation    = 0
+  Fragments Created                  = 0
+
+IPv6 Statistics
+
+  Packets Received                   = 756037
+  Received Header Errors             = 0
+  Received Address Errors            = 0
+  Datagrams Forwarded                = 0
+  Unknown Protocols Received         = 0
+  Received Packets Discarded         = 2170
+  Received Packets Delivered         = 757753
+  Output Requests                    = 313102
+  Routing Discards                   = 0
+  Discarded Output Packets           = 3
+  Output Packet No Route             = 11
+  Reassembly Required                = 0
+  Reassembly Successful              = 0
+  Reassembly Failures                = 0
+  Datagrams Successfully Fragmented  = 0
+  Datagrams Failing Fragmentation    = 0
+  Fragments Created                  = 0
+
+ICMPv4 Statistics
+
+                            Received    Sent
+  Messages                  742         3060      
+  Errors                    0           0         
+  Destination Unreachable   219         3045      
+  Time Exceeded             0           0         
+  Parameter Problems        0           0         
+  Source Quenches           0           0         
+  Redirects                 0           0         
+  Echo Replies              1           12        
+  Echos                     13          3         
+  Timestamps                0           0         
+  Timestamp Replies         0           0         
+  Address Masks             0           0         
+  Address Mask Replies      0           0         
+  Router Solicitations      0           0         
+  Router Advertisements     509         0         
+
+ICMPv6 Statistics
+
+                            Received    Sent
+  Messages                  96650       8762      
+  Errors                    0           0         
+  Destination Unreachable   12          15        
+  Packet Too Big            0           0         
+  Time Exceeded             0           0         
+  Parameter Problems        0           0         
+  Echos                     0           0         
+  Echo Replies              0           0         
+  MLD Queries               0           0         
+  MLD Reports               0           0         
+  MLD Dones                 0           0         
+  Router Solicitations      0           26        
+  Router Advertisements     87870       0         
+  Neighbor Solicitations    6170        2533      
+  Neighbor Advertisements   2598        6188      
+  Redirects                 0           0         
+  Router Renumberings       0           0         
+
+TCP Statistics for IPv4
+
+  Active Opens                        = 9871
+  Passive Opens                       = 1027
+  Failed Connection Attempts          = 645
+  Reset Connections                   = 1314
+  Current Connections                 = 7
+  Segments Received                   = 324850
+  Segments Sent                       = 178462
+  Segments Retransmitted              = 22090
+
+TCP Statistics for IPv6
+
+  Active Opens                        = 5574
+  Passive Opens                       = 84
+  Failed Connection Attempts          = 76
+  Reset Connections                   = 235
+  Current Connections                 = 12
+  Segments Received                   = 370130
+  Segments Sent                       = 172856
+  Segments Retransmitted              = 5328
+
+UDP Statistics for IPv4
+
+  Datagrams Received    = 113895
+  No Ports              = 533248
+  Receive Errors        = 5372
+  Datagrams Sent        = 65986
+
+UDP Statistics for IPv6
+
+  Datagrams Received    = 298743
+  No Ports              = 1463
+  Receive Errors        = 707
+  Datagrams Sent        = 132081
+===========================================================================
+Interface List
+  3...2c 60 0c 56 7e 45 ......Realtek PCIe GBE Family Controller
+  5...d0 7e 35 a9 1a 1f ......Microsoft Wi-Fi Direct Virtual Adapter
+  4...d0 7e 35 a9 1a 1e ......Intel(R) Dual Band Wireless-AC 3160
+ 10...d0 7e 35 a9 1a 22 ......Bluetooth Device (Personal Area Network)
+  1...........................Software Loopback Interface 1
+ 11...00 00 00 00 00 00 00 e0 Microsoft ISATAP Adapter
+ 12...00 00 00 00 00 00 00 e0 Teredo Tunneling Pseudo-Interface
+===========================================================================
+
+IPv4 Route Table
+===========================================================================
+Active Routes:
+Network Destination        Netmask          Gateway       Interface  Metric
+          0.0.0.0          0.0.0.0         10.0.0.1        10.0.0.41     20
+         10.0.0.0    255.255.255.0         On-link         10.0.0.41    276
+        10.0.0.41  255.255.255.255         On-link         10.0.0.41    276
+       10.0.0.255  255.255.255.255         On-link         10.0.0.41    276
+        127.0.0.0        255.0.0.0         On-link         127.0.0.1    306
+        127.0.0.1  255.255.255.255         On-link         127.0.0.1    306
+  127.255.255.255  255.255.255.255         On-link         127.0.0.1    306
+        224.0.0.0        240.0.0.0         On-link         127.0.0.1    306
+        224.0.0.0        240.0.0.0         On-link         10.0.0.41    276
+  255.255.255.255  255.255.255.255         On-link         127.0.0.1    306
+  255.255.255.255  255.255.255.255         On-link         10.0.0.41    276
+===========================================================================
+Persistent Routes:
+  None
+
+IPv6 Route Table
+===========================================================================
+Active Routes:
+ If Metric Network Destination      Gateway
+  4    276 ::/0                     fe80::fc55:b2ff:fe67:32ce
+  1    306 ::1/128                  On-link
+ 12    306 2001::/32                On-link
+ 12    306 2001:0:9d38:6ab8:2839:64b:51ce:7ce7/128
+                                    On-link
+  4    276 2601:98b:8200:51c1::/64  On-link
+  4    276 2601:98b:8200:51c1:2130:eb5f:d2c4:5d06/128
+                                    On-link
+  4    276 2601:98b:8200:51c1:6441:d607:bdda:a09d/128
+                                    On-link
+  4    276 2601:98b:8200:51c1:88ed:668f:fafa:8afc/128
+                                    On-link
+  4    276 2601:98b:8200:51c1:a53d:3e2:b9df:afda/128
+                                    On-link
+  4    276 fe80::/64                On-link
+ 12    306 fe80::/64                On-link
+ 12    306 fe80::2839:64b:51ce:7ce7/128
+                                    On-link
+  4    276 fe80::a53d:3e2:b9df:afda/128
+                                    On-link
+  1    306 ff00::/8                 On-link
+  4    276 ff00::/8                 On-link
+ 12    306 ff00::/8                 On-link
+===========================================================================
+Persistent Routes:
+  None
